@@ -1,0 +1,383 @@
+#collage img {
+	display: block;
+}
+
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 760px;
+}
+
+img {
+	border: 0px;
+}
+
+.none {
+	display: none;
+}
+
+a:hover,a:focus {
+	text-decoration: none;
+}
+
+#header {
+	border-bottom: 1px solid #CCC;
+	height: 78px;
+	width: 100%;
+	margin: 5px 0 3px 0;
+	padding-bottom: 1px;
+}
+
+#searchbox {
+	font-size: 11px;
+	height: 24px;
+}
+
+#searchbox,#wordmark {
+	text-align: right;
+}
+
+#wordmark {
+	border-top: 1px solid #CCC;
+	margin-left: 175px;
+}
+
+#wordmark h1 {
+	margin: 10px 0 0 0;
+}
+
+#uwlogo {
+	position: absolute;
+	margin-top: 4px;
+	margin-left: 22px;
+}
+
+#betabar {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-align: right;
+	word-spacing: 0.25em;
+	background-color: #333333;
+	margin: 0 0 0 170px;
+	padding: 3px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+#betabar p {
+	margin: 0 15px 0 0;
+	padding: 0;
+}
+
+table#articles {
+	width: 100%;
+	font-size: 85%;
+	border: 1px solid #333333;
+}
+
+form#search {
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+.google {
+	border: 1px solid #666;
+	font-size: 11px;
+}
+
+input.google {
+	border: 1px solid #666;
+	font-size: 11px;
+}
+
+#primarynavarea {
+	position: absolute;
+	top: 93px;
+	width: 160px;
+	left: 0px;
+	white-space: normal;
+	font-size: 80%;
+}
+
+#primarynavarea a {
+	text-decoration: none;
+	color: #000;
+}
+
+#primarynav a {
+	background-color: #FFFFFF;
+}
+
+#primarynav a:hover,#primarynavsub a:hover,#primarynav a:focus,#primarynav a:active,#primarynavsub a:focus,#primarynavsub a:active
+	{
+	color: #FF0000;
+}
+
+#primarynavarea li {
+	display: inline;
+}
+
+#primarynavarea li a {
+	border-bottom: 1px solid #ccc;
+	display: block;
+	margin-bottom: 2px;
+	padding: 2px 3px 2px 3px;
+}
+
+#primarynav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#primarynavsub {
+	margin: 0 0 0 10px;
+	padding: 0;
+	list-style: none;
+}
+
+#primarynavsub li a {
+	border: 1px solid #ccc;
+	display: block;
+}
+
+#primarynavsub a {
+	display: block;
+}
+
+#primarynavsub li a:hover,#primarynavsub li a:focus {
+	background-color: #CCCCCC;
+}
+
+#secondnavarea {
+	position: absolute;
+	margin-left: 591px;
+	top: 120px;
+	width: 161px;
+	_margin-top: 8px; /* hack for IE 6 */
+	white-space: normal;
+	background: #f3f4db;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	top: 120px;
+}
+
+html>body #secondnavarea {
+	top: 120px;
+}
+
+#secondnavarea ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#secondnavarea li {
+	margin: 0px;
+	padding: 0px;
+}
+
+#secondnav {
+	font-size: 70%;
+}
+
+#secondnav h4 {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 0px;
+	margin: 5px;
+	padding-top: 5px;
+	margin-bottom: -10px;
+}
+
+#secondnav a {
+	text-decoration: none;
+	font-weight: 450;
+	color: #990000;
+}
+
+#secondnav p {
+	color: #000000;
+	margin-top: -8px;
+	margin-bottom: 0px;
+}
+
+#secondnav a:hover,#secondnav a:focus {
+	color: #ff0000;
+}
+
+#secondnav li {
+	margin-left: 10px;
+	margin-top: 8px;
+	margin-bottom: 9px;
+	padding-bottom: 0px;
+	margin-right: 10px;
+}
+
+#contentbar {
+	background-color: #FFCC33;
+	margin-top: 3px;
+	margin-left: 0px;
+	width: 760px;
+	color: #333333;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 760px;
+}
+
+html>body #contentbar {
+	width: 760px;
+}
+
+#contentbar h5 {
+	font-size: 110%;
+	text-indent: 7pt;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 3px;
+	font-weight: normal;
+}
+
+#primarycontarea {
+	border: 1px;
+	border-style: solid;
+	border-color: #c1c1c1;
+	background-color: #ffffff;
+}
+
+#primarycontarea h1 {
+	font-size: 120%;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	padding: 0 0 2px 0;
+}
+
+#primarycontarea h2 {
+	font-size: 120%;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+#primarycontarea h3 {
+	color: #CC9900;
+	font-size: 110%;
+	font-weight: normal;
+	margin: 3px 0 3px 0;
+	padding: 2px 0 2px 0;
+}
+
+#primarycontarea h4 {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 0px;
+	padding-top: 5px;
+	margin-bottom: -1px;
+}
+
+#primarycontarea h5 {
+	font-size: 100%;
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 0px;
+	padding-top: 5px;
+	margin-bottom: -1px;
+}
+
+#primarycontarea h6 {
+	margin-top: -2px;
+	margin-bottom: -2px;
+}
+
+#primarycontent {
+	border-right: 0px;
+	border-right-style: solid;
+	border-color: #c1c1c1;
+}
+
+#primarycontent p {
+	margin-top: 10px;
+}
+
+#primarycontentnav {
+	font-size: 80%;
+}
+
+#contenttable {
+	padding-top: 4px;
+}
+
+#contenttable td {
+	text-align: left;
+	vertical-align: top;
+	background-color: #f3f4db;
+	padding: 7px;
+	border: 10px;
+}
+
+#contenttable p {
+	font-size: 80%;
+	margin-top: 0px;
+}
+
+#contenttable h6 {
+	color: #000000;
+	font-size: 80%;
+}
+
+/* for editing */
+.highlight {
+	background-color: #CCCC00;
+}
+
+.textinuppercase {
+	text-transform: uppercase;
+}
+
+#footer {
+	margin-left: 0px;
+	top: 0px;
+	border-left: 1px #c1c1c1 solid;
+	border-right: 1px #c1c1c1 solid;
+	border-bottom: 1px #c1c1c1 solid;
+	width: 760px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 760px;
+}
+
+html>body #footer {
+	width: 758px;
+}
+
+#departmentaddress p {
+	font-size: 70%;
+	margin: 0px;
+	padding: 10px 0px 10px 10px;
+}
+
+#footer a {
+	color: #7b0f0c;
+	text-decoration: none;
+}
+
+#footer a:hover,#footer a:focus {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+img.campaignlogo {
+	float: right;
+	text-align: right;
+	margin: 23px 20px 2px 2px;
+}
+
+img.gaelogo {
+	float: right;
+	text-align: right;
+	margin: 20px 20px 2px 2px;
+}

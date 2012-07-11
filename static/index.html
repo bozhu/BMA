@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>An Online Calculator of Berlekamp-Massey Algorithm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="Content-Language" content="en-us" />
+        <meta name="keywords" content="Berlekamp-Massey Algorithm, BMA" />
+        <meta name="author" content="Bo Zhu" />
+        <link type="text/css" rel="stylesheet" href="uw-template.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="clfbar">
+                <div id="uwlogo">
+                    <a href="http://www.uwaterloo.ca">
+                        <img src="http://www.uwaterloo.ca/images/template/uwlogo.gif" alt="Link to the University of Waterloo home page" width="105" height="70" border="0" />
+                    </a>
+                </div>
+                <div id="searchbox">
+                    <!-- form script is located on info, there are options though. Information is at http://web.uwaterloo.ca/clftemplate/search.html -->
+                    <form action="http://info.uwaterloo.ca/clfscripts/uwsearch.php" method="post" name="search" target="_blank" id="search" title="search" dir="ltr" lang="en">
+                        Search 
+                        <input type="radio" name="site" value="www.uwaterloo.ca"  checked="checked"/>
+                        uwaterloo.ca
+                        <input name="searchterm" type="text" id="searchterm" class="google" accesskey="s" tabindex="2" size="20" />  
+                        <input name="submit" type="submit" id="submit" class="google" tabindex="3" value="Search" />
+                    </form>
+                </div>
+                <!-- This is the department/faculty/site title - currently it is an image, options explained at http://web.uwaterloo.ca/documentation/clforgeeks/headerexplained.html -->
+                <div id="wordmark" > 
+                    <h3 >
+                        An Online Calculator of Berlekamp-Massey Algorithm
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+
+        <!-- core part begins here -->
+        <div id="primarycontarea">	
+            <div style="font-size: smaller; padding: 10px;">
+                <a href="http://en.wikipedia.org/wiki/Berlekamp-Massey_algorithm" target="_blank">Berlekamp-Massey algorithm</a> is an algorithm that will find the shortest linear feedback shift register (LFSR) for a given binary output sequence. Here we present a web-based implementation to compute the shortest LFSR and linear span of a given binary sequence. If you have any questions or suggestions, please do not hesitate to contact <a href="mailto:bo&lt;DOT&gt;zhu&lt;AT&gt;uwaterloo&lt;DOT&gt;a">Bo Zhu</a>.
+            </div>
+
+            <hr />
+
+            <div id="primarycontent" align="center"> 
+                Please enter the binary sequence (separated by commas):<br />	
+                <textarea id="seq" name="sequence" style = "width: 75%" rows="5">0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0</textarea>
+                <br /><br />
+                <input type="button" id="compute" value="Press to Compute" style="font-size: 10pt; width: 200px; horizontal-align: center;"/>
+                <br />
+
+                <hr />
+
+                <br />
+                LFSR: <input type="text" id="lfsr" value="" style="width: 350px"/>
+                Linear Span: <input type="text" id="span" value="" style="width: 30px"/>
+                Time Used: <input type="text" id="timeused" value="" style="width: 50px"/>
+                <br />
+                <div style="font-size: smaller; padding: 10px;" align="left">
+                    Please note that if the sequence is too long, it would take a long time to compute. As a result, <a href="http://code.google.com/appengine/" target="_blank">the Google server</a> will cut off the HTTP connection, so the final result cannot be sent back. In this case, please download <a href="FIXME" target="_blank">the Python source code from here</a>, and then you can run it on your local computers.  
+                </div>
+            </div>
+        </div>
+        <!-- core part end here -->
+
+        <!-- footer -->
+        <div id="footer">	
+            <div id="departmentaddress">
+                <a href="http://campaign.uwaterloo.ca" target="_blank"><img src="http://www.uwaterloo.ca/images/template/littlecampaignlogo.gif" alt="Campaign Waterloo" class="campaignlogo" /></a>
+                <a href="http://code.google.com/appengine/" target="_blank"><img src="http://code.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" class="gaelogo" /></a>	 
+                <p>University of Waterloo<br />
+                200 University Avenue West<br />
+                Waterloo, Ontario, Canada N2L 3G1<br />
+                519 888 4567<br /></p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+application: berlekamp-massey
+version: 3
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /compute
+  script: main.app
+  
+- url: /(.*\.(js|css))
+  static_files: static/\1
+  upload: static/(.*\.(js|css))
+
+- url: /.*
+  static_files: static/index.html
+  upload: static/index.html
