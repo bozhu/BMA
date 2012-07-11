@@ -10,6 +10,7 @@ def process_input(s):
     ret = []
     try:
         s = cgi.escape(s)
+        s = s.strip(', \t\r\n')
         l = s.split(',')
         for i in l:
             a = int(i.strip())
@@ -25,6 +26,8 @@ def process_input(s):
 
 class ComputationHandler(webapp2.RequestHandler):
     def post(self):
+        start_time = time.clock()
+
         sequence = process_input(self.request.body)
         if not sequence:
             self.response.headers['Content-Type'] = 'application/json'
@@ -36,7 +39,6 @@ class ComputationHandler(webapp2.RequestHandler):
             self.response.write(result)
             return
 
-        start_time = time.clock()
         polynomial, linear_span = BMA(sequence)
         elapsed_time = '%.2f sec' % (time.clock() - start_time)
 
