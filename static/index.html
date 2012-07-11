@@ -59,7 +59,9 @@
                 Time Used: <input type="text" id="timeused" value="" style="width: 50px"/>
                 <br />
                 <div style="font-size: smaller; padding: 10px;" align="left">
-                    Please note that if the sequence is too long, it would take a long time to compute. As a result, <a href="http://code.google.com/appengine/" target="_blank">the Google server</a> will cut off the HTTP connection, so the final result cannot be sent back. In this case, please download <a href="https://raw.github.com/bozhu/BMA/master/bma.py" target="_blank">the Python source code from here</a>, and then you can run it on your local computers.  
+                    Please note the output polynomial is using the form that its degree is always equal to the linear span. For example, x^3 + x + 1 means tap positions are 0th and 1st (<em>not 0th and 2nd</em>).
+                    <br /><br />
+                    If the input sequence is too long, it may take a long time to process. As a result, <a href="https://developers.google.com/appengine/" target="_blank">the Google App Engine server</a> may cut off HTTP connections, so the final result won't be sent back. In this case, please download <a href="https://raw.github.com/bozhu/BMA/master/bma.py" target="_blank">the Python source code from here</a>, and run it on local computers.  
                 </div>
             </div>
         </div>
