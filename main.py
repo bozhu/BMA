@@ -8,19 +8,24 @@ from bma import Berlekamp_Massey_algorithm as BMA
 
 def process_input(s):
     ret = []
-    for c in s:
-        if c.isdigit():
-            if int(c) not in (0, 1):
+    try:
+        s = cgi.escape(s)
+        l = s.split(',')
+        for i in l:
+            a = int(i.strip())
+            if a != 0 and a != 1:
                 return None
             else:
-                ret.append(int(c))
+                ret.append(a)
+    except:
+        return None
+
     return ret
 
 
 class ComputationHandler(webapp2.RequestHandler):
     def post(self):
-        input_str = self.request.body
-        sequence = process_input(cgi.escape(input_str))
+        sequence = process_input(self.request.body)
         if not sequence:
             self.response.headers['Content-Type'] = 'application/json'
             result = json.dumps({
